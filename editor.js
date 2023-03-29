@@ -46,6 +46,7 @@ function setup () {
   faceSelector.option('1');
   faceSelector.option('2');
   faceSelector.option('3');
+  faceSelector.option('4');
   faceSelector.value('1');
   faceSelector.parent('selector1Container');
 }
@@ -97,6 +98,9 @@ function draw () {
   }
   if (mode == '3') {
     simplePurpleFace();
+  }
+  if (mode == '4') {
+    firstFace();
   }
 
   pop();

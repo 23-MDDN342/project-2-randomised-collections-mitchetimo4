@@ -3,6 +3,6 @@
 ## 2023 MDDN342 Assignment 2: Randomised Collections
 **This is where you talk about your project!**
 
->This starter code is just some simple faces being drawn. 
+Today I uploaded my sketch image that I created on tuesday and started the creation of one of my faces in p5. I think the final results are going to be more blocky than I would have liked to begin with but I can work with it.  
 
 
