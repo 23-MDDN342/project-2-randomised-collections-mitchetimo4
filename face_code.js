@@ -93,8 +93,18 @@ function firstFace(){
   //head
   noStroke();
   fill("#FFE0BD");
-  rect(-5, -4, 10, 7);
-  triangle(-5, 3, 5, 3, 0, 6);
+  rect(-4, -2, 8, 5);
+  triangle(-4, 3, 4, 3, 0, 5.5);
 
+  //eyes
+  stroke('#000000');
+  strokeWeight(.3);
+  noFill();
+  //arc(-4, -2, 5, 5, PI, PI + QUARTER_PI);
+  arc(-1.9, 1.9, 2.5, 2.5, 9.9, 276);
+  arc(1.9, 1.9, 2.5, 2.5, 9.9, 276);
+
+  //brows
+  //line(1.9,1.5,);
   
 }
