@@ -4,7 +4,7 @@
 
 const canvasWidth = 960;
 const canvasHeight = 500;
-const bg_color = [71, 222, 219];
+const bg_color = [194, 197, 204];
 let slider1, slider2, slider3, slider4, slider5;
 let slider6, slider7, slider8, slider9, slider10;
 let faceSelector;
@@ -47,7 +47,7 @@ function setup () {
   faceSelector.option('2');
   faceSelector.option('3');
   faceSelector.option('4');
-  faceSelector.value('4');
+  faceSelector.value('2');
   faceSelector.parent('selector1Container');
 }
 
@@ -94,7 +94,7 @@ function draw () {
 
   if (mode == '2') {
      // let slider value 1 indicate thinness
-     blockyFace(s1);
+     secondFace();
   }
   if (mode == '3') {
     simplePurpleFace();

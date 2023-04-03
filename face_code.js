@@ -69,18 +69,47 @@ function simplePurpleFace() {
 /*
  * thinness_value ranges from 0-100 and indicates how thin the face is
  */
-function blockyFace(thinness_value) {
-  // head
+function secondFace(){
+  //boarder
+  push();
+  noFill();
+  strokeWeight(.1);
+  rect(-10, -10, 20, 20)
+  pop();
+  
+  //head
   noStroke();
-  fill(134, 19, 136);
-  let head_width = map(thinness_value, 0, 100, 8, 20);
-  rect(-head_width/2, -9, head_width, 18);
- 
+  fill("#b06c49");
+  rect(-4, -2, 8, 5);
+  triangle(-4, 3, 4, 3, 0, 5.5);
 
-  // eyes
-  fill(234, 122, 244);
-  ellipse(-2, -4, 1);
-  ellipse( 2, -4, 1);
+  //eyes
+  stroke('#000000');
+  strokeWeight(.3);
+  noFill();
+  //arc(-4, -2, 5, 5, PI, PI + QUARTER_PI);
+  arc(-1.9, 1.9, 2.5, 2.5, 9.9, 276);
+  arc(1.9, 1.9, 2.5, 2.5, 9.9, 276);
+
+  //brows
+  line(.9, 0, 3, -.5);
+  line(-.9, 0, -3, -.5);
+
+  //nose
+  line(-0.1, 2.4, 0.1, 2.4);
+
+  //mouth 
+  line(-1, 3.7, .8, 4);
+
+  //hair
+  noStroke();
+  fill("#000000");
+  rect(-4.5, -4, 9, 2.5)
+  rect(-4.7, -3, 1.5, 4);
+  rect(-2.5, -3, 1.5, 3);
+  rect(1, -3, 1.5, 3);
+  rect(2, -3, 1.5, 4);
+  rect(3.25, -3, 1.5, 3);
 }
 
 function firstFace(){
@@ -90,6 +119,11 @@ function firstFace(){
   rect(-10, -10, 20, 20)
   pop();
   
+  //hair base
+  noStroke();
+  fill("#905424");
+  ellipse(0,-1,12,10.5);
+
   //head
   noStroke();
   fill("#FFE0BD");
@@ -105,6 +139,18 @@ function firstFace(){
   arc(1.9, 1.9, 2.5, 2.5, 9.9, 276);
 
   //brows
-  //line(1.9,1.5,);
+  line(.9, 0, 3, -.5);
+  line(-.9, 0, -3, -.5);
+
+  //nose
+  line(-0.1, 2.4, 0.1, 2.4);
+
+  //mouth 
+  line(-1, 3.7, .8, 4);
+
+  //hair
+  fill("#905424");
+  noStroke();
+  rect(-4.5, -4, 9, 2.5);
   
 }
