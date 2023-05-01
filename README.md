@@ -5,4 +5,8 @@
 
 Today I uploaded my sketch image that I created on tuesday and started the creation of one of my faces in p5. I think the final results are going to be more blocky than I would have liked to begin with but I can work with it.  
 
+2/5/23
+
+This crit contains my progress towards drawing my faces. They are not yet in variables but the faces themselves are coming along nicely. My next step is to continue this work and get all of the features done so that I can add the randomising feature to them for hand-in. I aim to have a good selection of hairstyles, mouths, eyes and skin tones. After that I will work on the arrangement. 
+
 

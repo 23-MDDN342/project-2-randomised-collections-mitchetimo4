@@ -47,7 +47,7 @@ function setup () {
   faceSelector.option('2');
   faceSelector.option('3');
   faceSelector.option('4');
-  faceSelector.value('2');
+  faceSelector.value('3');
   faceSelector.parent('selector1Container');
 }
 
@@ -97,7 +97,7 @@ function draw () {
      secondFace();
   }
   if (mode == '3') {
-    simplePurpleFace();
+    thirdFace();
   }
   if (mode == '4') {
     firstFace();
