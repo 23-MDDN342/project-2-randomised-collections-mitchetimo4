@@ -47,7 +47,7 @@ function setup () {
   faceSelector.option('2');
   faceSelector.option('3');
   faceSelector.option('4');
-  faceSelector.value('3');
+  faceSelector.value('4');
   faceSelector.parent('selector1Container');
 }
 

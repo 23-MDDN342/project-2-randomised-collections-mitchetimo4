@@ -17,41 +17,55 @@
 
 
 function orangeAlienFace(tilt_value, eye_value, mouth_value) {
-  const bg_color3 = [71, 222, 219];
-  const fg_color3 = [255, 93, 35];
+ //boarder
+ push();
+ noFill();
+ strokeWeight(.1);
+ rect(-10, -10, 20, 20)
+ pop();
+ 
+ //head
+ noStroke();
+ fill("#b06c49");
+ rect(-4, -2, 8, 5);
+ triangle(-4, 3, 4, 3, 0, 5.5);
 
-  let headSize = 20
-  let eyeSize = 5;
-  let centerX = 0;
-  let Iy = -4
-  let distactBetweenEyes = 5
-  let MouthDrop = 7
-  
-  // rotation in degrees
-  angleMode(DEGREES);
-  rotate(tilt_value);
+ //eyes
+ stroke('#000000');
+ strokeWeight(.3);
+ noFill();
+ //arc(-4, -2, 5, 5, PI, PI + QUARTER_PI);
+ arc(-1.9, 1.9, 2.5, 2.5, 9.9, 276);
+ arc(1.9, 1.9, 2.5, 2.5, 9.9, 276);
 
- // head
-  noStroke();
-  fill(fg_color3);
-  ellipse(centerX, 0, headSize, headSize);
+ //brows
+ line(.9, 0, 3, -.5);
+ line(-.9, 0, -3, -.5);
 
-  // 2 traditonal eyes
-  if (eye_value === 1 || eye_value == 3) {
-    fill(bg_color3);
-    ellipse(centerX, Iy, eyeSize-1,eyeSize);
-   
-  }
-// middle eye
-  if (eye_value >= 2) {
-    fill(bg_color3);
-    ellipse(centerX - distactBetweenEyes, Iy, eyeSize);
-    ellipse(centerX + distactBetweenEyes, Iy, eyeSize );
-  }
+ //nose
+ line(-0.1, 2.4, 0.1, 2.4);
 
-  // mouth
-  fill(bg_color3);
-  ellipse(centerX, Iy + MouthDrop, distactBetweenEyes, mouth_value);
+ //mouth 
+ line(-1, 3.7, .8, 3.7);
+
+ //hair
+ noStroke();
+ fill("#d9b380");
+ rect(-4.5, -4, 9, 2.5)
+ rect(-4.7, -3, 1.5, 4);
+ rect(-2.5, -3, 1.5, 3);
+ rect(1, -3, 1.5, 3);
+ rect(2, -3, 1.5, 4);
+ rect(3.25, -3, 1.5, 3);
+
+ //blonde tips
+ noStroke();
+ fill("#FF69B4");
+ rect(-4.7, -.5, 1.5, 1.5);
+ rect(-2.5, -1, 1.5, 1);
+ rect(1, -1, 1.5, 1);
+ rect(2, -.5, 1.5, 1.5);
+ rect(3.25, -1, 1.5, 1);
 }
 
 
@@ -90,7 +104,7 @@ function thirdFace() {
  //hair spikey
  noStroke();
   fill("#000000");
-  rect(-4.5, -4, 9, 2.5)
+  rect(-4, -4, 8, 2.5)
   triangle(-.1, -8, 1.1, -4, -1.1, -4);//middle
   triangle(1.9, -7, 3.1, -4, 1.1, -4);//right
   triangle(-2.1, -7, -1.1, -4, -3.1, -4);//left
@@ -99,7 +113,7 @@ function thirdFace() {
 /*
  * thinness_value ranges from 0-100 and indicates how thin the face is
  */
-function secondFace(){ //dreads
+function secondFace(){ //dreads WRLD
 
   //boarder
   push();
@@ -130,7 +144,8 @@ function secondFace(){ //dreads
   line(-0.1, 2.4, 0.1, 2.4);
 
   //mouth 
-  line(-1, 3.7, .8, 4);
+  noFill();
+  ellipse(0, 3.7, 1.2, 1);
 
   //hair
   noStroke();
@@ -172,11 +187,14 @@ function firstFace(){ //afro
 
   //eyes
   stroke('#000000');
-  strokeWeight(.3);
+  strokeWeight(.4);
   noFill();
-  //arc(-4, -2, 5, 5, PI, PI + QUARTER_PI);
-  arc(-1.9, 1.9, 2.5, 2.5, 9.9, 276);
-  arc(1.9, 1.9, 2.5, 2.5, 9.9, 276);
+  
+  line(1, 1, 3, 1);
+  line(-3, 1, -1, 1);
+
+  //arc(-1.9, 1.9, 2.5, 2.5, 9.9, 276);
+  //arc(1.9, 1.9, 2.5, 2.5, 9.9, 276);
 
   //brows
   line(.9, 0, 3, -.5);
@@ -186,7 +204,10 @@ function firstFace(){ //afro
   line(-0.1, 2.4, 0.1, 2.4);
 
   //mouth 
-  line(-1, 3.7, .8, 4);
+  //line(-1, 3.7, .8, 4);
+
+  arc(0, 4.5, 2.5, 2.5, 9.9, 276);
+
 
   //hair
   fill("#FF69B4");
