@@ -215,3 +215,121 @@ function firstFace(){ //afro
   rect(-4.5, -4, 9, 2.5);
   
 }
+
+function fifthFace(){ //dreads XXXtentacion
+
+  //boarder
+  push();
+  noFill();
+  strokeWeight(.1);
+  rect(-10, -10, 20, 20)
+  pop();
+  
+  //head
+  noStroke();
+  fill("#bf9169");
+  rect(-4, -2, 8, 5);
+  triangle(-4, 3, 4, 3, 0, 5.5);
+
+  //eyes
+  stroke('#000000');
+  strokeWeight(.3);
+  noFill();
+  //arc(-4, -2, 5, 5, PI, PI + QUARTER_PI);
+  arc(-1.9, 1.9, 2.5, 2.5, 9.9, 276);
+  arc(1.9, 1.9, 2.5, 2.5, 9.9, 276);
+
+  //brows
+  line(.9, 0, 3, -.5);
+  line(-.9, 0, -3, -.5);
+
+  //nose
+  line(-0.1, 2.4, 0.1, 2.4);
+
+  //mouth 
+  noFill();
+  ellipse(0, 3.7, 1.2, 1);
+
+  //hair
+  noStroke();
+  fill("#0000a5");
+  rect(-4.5, -4, 9, 2.5) //base
+
+  rect(-4.7, -3, 1.5, 5);
+  rect(-3.5, -3, 1.5, 4);
+  rect(-2.5, -3, 1.5, 3);
+
+  rect(1, -3, 1.5, 3);
+  rect(2, -3, 1.5, 4);
+  rect(3.25, -3, 1.5, 5);
+
+  //dark blue tips
+  noStroke();
+  fill("#000058");
+  rect(-4.7, 1, 1.5, 1);
+  rect(-2.5, -1, 1.5, 1);
+  rect(1, -1, 1.5, 1);
+  rect(2, 0, 1.5, 1);
+  rect(-3.5, 0, 1.5, 1);
+rect(3.25, 1, 1.5, 1);
+}
+
+function sixthFace(){ //green shaved 
+
+  //boarder
+  push();
+  noFill();
+  strokeWeight(.1);
+  rect(-10, -10, 20, 20)
+  pop();
+  
+  //head
+  noStroke();
+  fill("#b06c49");
+  rect(-4, -2, 8, 5);
+  triangle(-4, 3, 4, 3, 0, 5.5);
+
+  //eyes
+  stroke('#000000');
+  strokeWeight(.3);
+  noFill();
+  //arc(-4, -2, 5, 5, PI, PI + QUARTER_PI);
+  arc(-1.9, .8, 2.5, 2.5, 101, 97);
+  arc(1.9, .8, 2.5, 2.5, 101, 97);
+
+  //brows
+  line(.9, 0, 3, -.5);
+  line(-.9, 0, -3, -.5);
+
+  //nose
+  line(-0.1, 2.4, 0.1, 2.4);
+
+  //mouth 
+  noFill();
+  ellipse(0, 3.7, 1.2, 1);
+
+  //hair
+  noStroke();
+  fill("#90ee90");
+  rect(-4, -3.5, 8, 2.5); //base
+  rect(-4, -1.5, .5, 2);
+  rect(3.5, -1.5, .5, 2);
+
+ /*rect(-4.7, -3, 1.5, 5);
+  rect(-3.5, -3, 1.5, 4);
+  rect(-2.5, -3, 1.5, 3);
+
+  rect(1, -3, 1.5, 3);
+  rect(2, -3, 1.5, 4);
+  rect(3.25, -3, 1.5, 5);
+
+  //blonde tips
+  noStroke();
+  fill("#000058");
+  rect(-4.7, 1, 1.5, 1);
+  rect(-2.5, -1, 1.5, 1);
+  rect(1, -1, 1.5, 1);
+  rect(2, 0, 1.5, 1);
+  rect(-3.5, 0, 1.5, 1);
+rect(3.25, 1, 1.5, 1);*/
+}

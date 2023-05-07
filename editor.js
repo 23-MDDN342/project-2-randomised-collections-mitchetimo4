@@ -47,7 +47,9 @@ function setup () {
   faceSelector.option('2');
   faceSelector.option('3');
   faceSelector.option('4');
-  faceSelector.value('4');
+  faceSelector.option('5');
+  faceSelector.option('6');
+  faceSelector.value('6');
   faceSelector.parent('selector1Container');
 }
 
@@ -101,6 +103,12 @@ function draw () {
   }
   if (mode == '4') {
     firstFace();
+  }
+  if (mode == '5'){
+    fifthFace();
+  }
+  if (mode == '6'){
+    sixthFace();
   }
 
   pop();

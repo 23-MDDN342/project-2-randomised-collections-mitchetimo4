@@ -9,8 +9,12 @@ Today I uploaded my sketch image that I created on tuesday and started the creat
 
 This crit contains my progress towards drawing my faces. They are not yet in variables but the faces themselves are coming along nicely. My next step is to continue this work and get all of the features done so that I can add the randomising feature to them for hand-in. I aim to have a good selection of hairstyles, mouths, eyes and skin tones. After that I will work on the arrangement. 
 
+
 5/5/23
 
 I have now almost drawn all of the shapes nessersary to create a selection of different random faces. At the moment they are pretty similar so I am brainstorming ways for each of them to have a point of difference. I am currently thinking about creating an even bigger range of haircuts with lots of different colours. This means when they are in the arrangement its a big variation of faces with different brightly coloured haircuts. There are a few iconic celebrity hairstyles that I would like to add if I go down this route. At the moment it is seeming like the best option to make the faces stand out from each other. Creating this library of hairstyles will be my next step, as well as addinga couple more eyes and maybe a mouth. 
 
 
+7/5/23
+
+Today I added 2 more hairstyles, making the total 6. I also added the last type of eyes and another skin tone. This is enough for me to start coding what ive drawn into the sliders. Once this is done and some of the arrangement is coded I will be able to see what they all look like together. This will allow me to see what is missing and I will add new Hairstyles and colours accordingly. My next step is to link my faces and their features to sliders and begin the steps to creating an arrangement. 
