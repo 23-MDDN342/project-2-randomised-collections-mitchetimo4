@@ -19,6 +19,12 @@ I have now almost drawn all of the shapes nessersary to create a selection of di
 
 Today I added 2 more hairstyles, making the total 6. I also added the last type of eyes and another skin tone. This is enough for me to start coding what ive drawn into the sliders. Once this is done and some of the arrangement is coded I will be able to see what they all look like together. This will allow me to see what is missing and I will add new Hairstyles and colours accordingly. My next step is to link my faces and their features to sliders and begin the steps to creating an arrangement. 
 
+
 9/5/23
 
 Today I created seperate files for each component of my faces. They are now fully parameterised but arent linked to the face code file yet. My next step is to link these files and get the sliders working before I start working on the arrangement. Unfortunately I had to remove my afro hair style as it was drawn both under and over the head part, making it inpossible to put in the slider as they are drawn in different orders. I am thinking of replacing it with another hairstyle once I get the sliders working smoothly.
+
+
+11/5/23
+
+Over yesterday and today I have managed to get all of the sliders working as well as the begginings of my arrangement. Each slider now can flawlessly change either the skin tone, eye type, mouth type, and hairstyle. While doing this I added another hairstyle to make up for the removal of the afro character. My next step after having parameterised faces was to work on the arrangment code. I now have random faces drawn in a grid pattern, these change every 3 seconds and can also be cycled by clicking. For my submission I want to have an arrangement of 3 faces, possibly at different sizes. This is what I will be working on next. 

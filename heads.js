@@ -6,7 +6,6 @@
 
 function Heads(headVersion) {
 
-  //Set hair colours
   const peach = ["#FFE0BD"];
   const darkBrown = ["#b06c49"];
   const lightBrown = ["#bf9169"];

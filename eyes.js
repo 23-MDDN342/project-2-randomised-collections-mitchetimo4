@@ -5,7 +5,7 @@
 
 
 function Eyes(eyeVersion) {
-
+  angleMode(RADIANS)
   //Set line colour
   const eyeLines = ["#000000"];
   

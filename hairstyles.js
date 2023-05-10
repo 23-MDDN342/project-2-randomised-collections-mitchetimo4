@@ -13,6 +13,8 @@ function Hairstyles(hairstyleVersion) {
   const greenHair = ["#90ee90"];
   const bluehair = ["#0000a5"];
   const darkBlueHair = ["#000058"];
+  const redHair = ["#d70040"];
+  const darkRedHair = ["#c70039"];
 
   if (hairstyleVersion == 1){ //pink tipped dreads
     //hair
@@ -98,6 +100,31 @@ function Hairstyles(hairstyleVersion) {
     rect(-4, -3.5, 8, 2.5); //base
     rect(-4, -1.5, .5, 2);
     rect(3.5, -1.5, .5, 2);
+  }
+
+  else if (hairstyleVersion == 6){ //Read Dreadlocks
+    //hair
+    noStroke();
+    fill(redHair);
+    rect(-4.5, -4, 9, 2.5) //base
+
+    rect(-4.7, -3, 1.5, 5);
+    rect(-3.5, -3, 1.5, 4);
+    rect(-2.5, -3, 1.5, 3);
+
+    rect(1, -3, 1.5, 3);
+    rect(2, -3, 1.5, 4);
+    rect(3.25, -3, 1.5, 5);
+
+    //dark blue tips
+    noStroke();
+    fill(darkRedHair);
+    rect(-4.7, 1, 1.5, 1);
+    rect(-2.5, -1, 1.5, 1);
+    rect(1, -1, 1.5, 1);
+    rect(2, 0, 1.5, 1);
+    rect(-3.5, 0, 1.5, 1);
+    rect(3.25, 1, 1.5, 1);
   }
 }
  

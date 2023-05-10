@@ -49,7 +49,7 @@ function setup () {
   faceSelector.option('4');
   faceSelector.option('5');
   faceSelector.option('6');
-  faceSelector.value('6');
+  faceSelector.value('1');
   faceSelector.parent('selector1Container');
 }
 
@@ -88,14 +88,15 @@ function draw () {
   push();
   if (mode == '1') {
    // draw face using values mapped from 3 sliders
-   let tilt_value = map(s1, 0, 100, -90, 90);
-   let mouth_value = map(s2, 0, 100, 0.5, 10);
-   let eye_value = int(map(s3, 0, 100, 1, 3));
-   orangeAlienFace(tilt_value, eye_value, mouth_value);
+   let headVersion = int(map(s1, 0, 100, 1, 3));
+   let eyeVersion = int(map(s2, 0, 100, 1, 3));
+   let mouthVersion = int(map(s3, 0, 100, 1, 3));
+   let hairstyleVersion = int(map(s4, 0, 100, 1, 6));
+  // function drawDesuHead(eyes, hairstyles, heads, mouths){
+   drawDesuHead(eyeVersion, hairstyleVersion, headVersion, mouthVersion);
   }
 
   if (mode == '2') {
-     // let slider value 1 indicate thinness
      secondFace();
   }
   if (mode == '3') {
