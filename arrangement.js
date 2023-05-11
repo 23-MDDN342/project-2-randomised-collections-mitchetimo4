@@ -57,12 +57,12 @@ function draw () {
   noStroke();
 
   // draw a 7x4 grid of faces
-  let w = canvasWidth / 7;
-  let h = canvasHeight / 4;
-  for(let i=0; i<4; i++) {
-    for(let j=0; j<7; j++) {
-      let y = h/2 + h*i;
-      let x = w/2 + w*j;
+  //let w = canvasWidth / 7;
+  //let h = canvasHeight / 4;
+  //for(let i=0; i<4; i++) {
+    //for(let j=0; j<7; j++) {
+      //let y = h/2 + h*i;
+      //let x = w/2 + w*j;
      
       let headRandom = random(1,100);
       let eyeRandom = random(1,100);
@@ -107,6 +107,8 @@ function draw () {
           mouthVersion = 1;
         }
 
+        console.log(hairstyleRandom);
+
         if(hairstyleRandom < 16.6666666667){
           hairstyleVersion = 1;
         } else if (hairstyleRandom >= 16.6666666667 && hairstyleRandom <= 33.3333333333){
@@ -122,16 +124,38 @@ function draw () {
         }
 
 
-        push();
-        translate(x, y);
-        scale(8);
+        push(); //MIDDLE HEAD
+        translate(width/2, height/2); //was x, y
+        scale(25);
         
         drawDesuHead(eyeVersion, hairstyleVersion, headVersion, mouthVersion);
         pop();
+
+
+        push(); //LEFT HEAD
+        translate(width/5, height/2); //was x, y
+        scale(20);
+        
+        drawDesuHead(eyeVersion, getRandomHairstyle(), headVersion, mouthVersion);
+        pop();
+
+
+        push(); //RIGHT HEAD
+        translate(width/5 * 4, height/2); //was x, y
+        scale(20);
+        
+        drawDesuHead(eyeVersion, getRandomHairstyle(), headVersion, mouthVersion);
+        pop();
       
     }
-  }
+  //}
+//}
+
+function getRandomHairstyle(){
+  return(random(1,100));
+  
 }
+
 
 function keyTyped() {
   if (key == '!') {
