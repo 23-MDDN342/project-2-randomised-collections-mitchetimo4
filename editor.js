@@ -4,7 +4,7 @@
 
 const canvasWidth = 960;
 const canvasHeight = 500;
-const bg_color = [71, 222, 219];
+const bg_color = [194, 197, 204];
 let slider1, slider2, slider3, slider4, slider5;
 let slider6, slider7, slider8, slider9, slider10;
 let faceSelector;
@@ -46,6 +46,9 @@ function setup () {
   faceSelector.option('1');
   faceSelector.option('2');
   faceSelector.option('3');
+  faceSelector.option('4');
+  faceSelector.option('5');
+  faceSelector.option('6');
   faceSelector.value('1');
   faceSelector.parent('selector1Container');
 }
@@ -85,18 +88,28 @@ function draw () {
   push();
   if (mode == '1') {
    // draw face using values mapped from 3 sliders
-   let tilt_value = map(s1, 0, 100, -90, 90);
-   let mouth_value = map(s2, 0, 100, 0.5, 10);
-   let eye_value = int(map(s3, 0, 100, 1, 3));
-   orangeAlienFace(tilt_value, eye_value, mouth_value);
+   let headVersion = int(map(s1, 0, 100, 1, 3));
+   let eyeVersion = int(map(s2, 0, 100, 1, 3));
+   let mouthVersion = int(map(s3, 0, 100, 1, 3));
+   let hairstyleVersion = int(map(s4, 0, 100, 1, 6));
+  // function drawDesuHead(eyes, hairstyles, heads, mouths){
+   drawDesuHead(eyeVersion, hairstyleVersion, headVersion, mouthVersion);
   }
 
   if (mode == '2') {
-     // let slider value 1 indicate thinness
-     blockyFace(s1);
+     secondFace();
   }
   if (mode == '3') {
-    simplePurpleFace();
+    thirdFace();
+  }
+  if (mode == '4') {
+    firstFace();
+  }
+  if (mode == '5'){
+    fifthFace();
+  }
+  if (mode == '6'){
+    sixthFace();
   }
 
   pop();
