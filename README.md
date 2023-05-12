@@ -28,3 +28,8 @@ Today I created seperate files for each component of my faces. They are now full
 11/5/23
 
 Over yesterday and today I have managed to get all of the sliders working as well as the begginings of my arrangement. Each slider now can flawlessly change either the skin tone, eye type, mouth type, and hairstyle. While doing this I added another hairstyle to make up for the removal of the afro character. My next step after having parameterised faces was to work on the arrangment code. I now have random faces drawn in a grid pattern, these change every 3 seconds and can also be cycled by clicking. For my submission I want to have an arrangement of 3 faces, possibly at different sizes. This is what I will be working on next. 
+
+
+12/5/23
+
+I have now created my final Arrangment. I decided to go for a three face design with emphasis on the middle (larger) face. This is because I wanted to show off the detail in the faces. I felt like when they were being displayed in grid form some of the detail was getting over looked by the people I was showing. I worked hard on the placement of the facial features and I feel like I executed it well so I want people to notice. A lot of my hairstyles were inspired by celebs and I think when the random faces are shown in groups of three, people are more likely to recognise the hair. My next step is to write my final readme and clean up my code. 
